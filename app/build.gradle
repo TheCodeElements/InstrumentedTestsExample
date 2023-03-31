@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("de.mannodermaus.android-junit5") version "1.8.2.1"
+}
+
+android {
+
+
+
+    namespace 'cr.example.testwebview'
+            compileSdk 33
+
+    defaultConfig {
+        applicationId "cr.example.testwebview"
+        minSdk 21
+        targetSdk 33
+        versionCode 2
+        versionName "0.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+        exclude "**/attach_hotspot_windows.dll"
+        exclude "META-INF/licenses/**"
+        exclude "META-INF/AL2.0"
+        exclude "META-INF/LGPL2.1"
+    }
+
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.all {
+            useJUnit()
+            useJUnitPlatform()
+            reports {
+                junitXml.enabled = true
+                html.enabled = true
+            }
+            testLogging {
+                events "started",  "passed", "skipped", "failed", "standardOut", "standardError"
+
+                // to run JUnit 3/4 tests:
+//                testImplementation("junit:junit:4.13.2")
+//                testRuntime("org.junit.vintage:junit-vintage-engine:5.7.0")
+            }
+        }
+
+
+
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+
+    // junit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    androidTestImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+
+//    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+//    androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+//
+//    testImplementation 'io.kotlintest:kotlintest-runner-junit5:3.4.2'
+//    androidTestImplementation 'io.kotlintest:kotlintest-runner-junit5:3.4.2'
+
+    // junit 4
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+}
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidTestResultsUserPreferences">
+    <option name="androidTestResultsTableState">
+      <map>
+        <entry key="-1597504356">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="27271JEGR03749" value="120" />
+                  <entry key="Duration" value="90" />
+                  <entry key="Google&#10; Pixel 6a" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="-1295278811">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="27271JEGR03749" value="120" />
+                  <entry key="Duration" value="90" />
+                  <entry key="Google&#10; Pixel 6a" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="-599728071">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="18251FDF6006Z5" value="120" />
+                  <entry key="27271JEGR03749" value="120" />
+                  <entry key="Duration" value="90" />
+                  <entry key="Google" value="120" />
+                  <entry key="Google&#10; Pixel 6" value="120" />
+                  <entry key="Google&#10; Pixel 6a" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="-402056825">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="18251FDF6006Z5" value="120" />
+                  <entry key="Duration" value="90" />
+                  <entry key="Google&#10; Pixel 6" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
